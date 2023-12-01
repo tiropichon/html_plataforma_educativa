@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educativa</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin as="font">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo-header" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Academia Tecnológica<span class="logo__bold"> Ruiz</span></h1>
+                </a>
+                <div class="form-autocomplete">
+                    <form class="form-busqueda">
+                        <input class="input-busqueda" type="text" placeholder="Buscador de cursos">
+                        <button class="boton-busqueda" type="submit" disabled tabindex="-1">
+                            <svg aria-label="Enviar búsqueda" role="img" focusable="false" class="icono-busqueda"></svg>
+                        </button>
+                    </form>
+                </div>
+                <nav class="navegacion-header">
+                    <a href="nosotros.html" class="navegacion-header__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion-header__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion-header__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Nuestros Próximos Cursos y Talleres</h3>
+
+        <div class="curso">
+            <div>
+                <img class="curso__imagen" src="img/react.png" alt="imagen del curso">
+            </div>
+
+            <div class="curso__informacion">
+                <h4 class="no-margin">React</h4>
+                <p class="curso__label">Precio:
+                    <span class="curso__info">120 €</span>
+                </p>
+                <p class="widget-curso__label">Cupo:
+                    <span class="curso__info">20</span>
+                </p>
+                <p class="curso__descripcion">
+                    Bienvenido al Máster en React, en el que aprenderemos todo lo necesario para dominar la librería para JavaScript más popular que
+                    existe actualmente y desarrollaremos varias aplicaciones web completas con el MERN Stack, el conjunto de tecnologías con más demanda 
+                    laboral y más proyección de futuro.
+                </p>
+            </div><!--.curso__informacion-->
+        </div> <!--.curso-->
+
+        <div class="curso">
+            <div class="curso__imagen">
+                <img class="curso__imagen" src="img/mern.png" alt="imagen del curso">
+            </div>
+
+            <div class="curso__informacion">
+                <h4 class="no-margin">MERN</h4>
+                <p class="curso__label">Precio:
+                    <span class="curso__info">180 €</span>
+                </p>
+                <p class="widget-curso__label">Cupo:
+                    <span class="curso__info">20</span>
+                </p>
+                <p class="curso__descripcion">
+                    En este curso vas a aprender a crear una aplicación web que será una web personal con panel de Administrador protegido por un login con JWT, 
+                    todo paso a paso usando el MERN Stack que está compuesto por MongoDB, Express JS, React JS y Node JS.
+
+                    Crearemos nuestra aplicación desde cero sin usar nada prefabricado, aprenderemos base de datos no relacional con MongoDB, en el Backend 
+                    crearemos un API REST con Node JS y Express JS y en el Frontend usaremos React JS con Hooks y en la parte del CSS usaremos SASS.
+
+                    Cuando tengamos nuestra aplicación terminara aprenderemos a desplegar nuestra aplicación en la nube.
+
+                    Este curso tiene como objetivo enseñarte a desarrollar cualquier tipo de aplicación desde cero, convirtiéndote en un desarrollador Full Stack 
+                    sobre el MERN Stack.
+                </p>
+            </div><!--.curso__informacion-->
+        </div> <!--.curso-->
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Academia Tecnológica<span class="logo__bold"> Ruiz</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/modernizr.js"></script>
+</body>
+</html>

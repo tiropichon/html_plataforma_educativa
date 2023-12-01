@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educativa</title>
+    <meta name="description" content="Página web de blog de café">
+    
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin as="font">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo-header" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Academia Tecnológica<span class="logo__bold"> Ruiz</span></h1>
+                </a>
+                <div class="form-autocomplete">
+                    <form class="form-busqueda">
+                        <input class="input-busqueda" type="text" placeholder="Buscador de cursos">
+                        <button class="boton-busqueda" type="submit" disabled tabindex="-1">
+                            <svg aria-label="Enviar búsqueda" role="img" focusable="false" class="icono-busqueda"></svg>
+                        </button>
+                    </form>
+                </div>
+                <nav class="navegacion-header">
+                    <a href="nosotros.html" class="navegacion-header__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion-header__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion-header__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main>
+            <h3>Nuestros cursos</h3>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <img src="./img/html.jpg" alt="html5" load="lazy">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">HTML 5</h4>
+                    <p>
+                        Bienvenido a este increíble curso diseño web, HTML5 master editon desde 0 para principiantes.
+                        En este maravilloso curso aprenderás como iniciarte en el mundo del desarrollo web.
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario">Info curso</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <img src="./img/css.jpg" alt="css3" load="lazy">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">CSS 3</h4>
+                    <p>
+                        Bienvenido al curso de CSS3, en este curso aprenderás y dominarás CSS DESDE CERO hasta un NIVEL AVANZADO, 
+                        empezaremos conociendo qué es CSS3 y creando nuestro primer archivo .css hasta crear diseños adaptables a dispositivos móviles. 
+                        Este curso está estructurado paso por paso para que conozcas y aprendas CSS3 desde cero.
+                    </p>
+                    <a class="boton boton--primario">Info curso</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <img src="./img/javascript.jpg" alt="js" load="lazy">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">JavaScript ES6</h4>
+                    <p>
+                        Uno de los cambios más importantes dentro del lenguaje JavaScript, uno de los más utilizados actualmente en el desarrollo web. 
+                        La nueva versión web de la especificaciones del ECMAScript 6 o 2015 (European Computer Manufacturers Association) que también se le conoce 
+                        como ES6. En este curso podrás actulizar tus conocimientos en JavaScript con los siguientes objetivos:
+                    </p>
+                    <a class="boton boton--primario">Info curso</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <img src="./img/react.png" alt="react" load="lazy">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">React</h4>
+                    <p>
+                        Bienvenido al Máster en React, en el que aprenderemos todo lo necesario para dominar la librería para JavaScript más popular que 
+                        existe actualmente y desarrollaremos varias aplicaciones web completas con el MERN Stack, el conjunto de tecnologías con más demanda 
+                        laboral y más proyección de futuro.
+                    </p>
+                    <a class="boton boton--primario">Info curso</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Cursos destacados</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">React</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span>120 €</span>
+                    </p>
+                    <p class="widget-curso__info">Cupo:
+                        <span>20 personas</span>
+                    </p>
+                    <a href="cursos.html" class="boton boton--secundario">Más información sobre nuestros cursos</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">MERN</h4>
+                    <p class="widget-curso__label">Precio:
+                        <span>180 €</span>
+                    </p>
+                    <p class="widget-curso__info">Cupo:
+                        <span>20 personas</span>
+                    </p>
+                    <a href="cursos.html" class="boton boton--secundario">Más información sobre nuestros cursos</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Academia Tecnológica<span class="logo__bold"> Ruiz</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/modernizr.js"></script>
+</body>
+</html>
